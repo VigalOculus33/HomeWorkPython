@@ -37,4 +37,4 @@
 
 > git branch[branch_name]- создали ветку 
 
->удаление ветки blat
+> *git cummit*
