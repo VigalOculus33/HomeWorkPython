@@ -39,3 +39,4 @@
 ----
 > *git cummit*
 
+> *git commit -am* - почнинили конфликт
