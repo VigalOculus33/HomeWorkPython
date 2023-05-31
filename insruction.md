@@ -38,3 +38,7 @@
 > git branch[branch_name]- создали ветку 
 ------
 > *git checkout detiting branch* - добавили команду
+
+
+
+> *git branch -d <название ветки> – удалить ветку* 
