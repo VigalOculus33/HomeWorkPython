@@ -3,10 +3,16 @@
 #Выведите минимальное количество монет, которые нужно перевернуть
 
 def min_flips(coins):
-    tails = coins.count("решка")
-    heads = coins.count("герб")
+    tails = 0
+    heads = 0
+    
+    for coin in coins:
+        if coin == "решка":
+            tails += 1
+        elif coin == "герб":
+            heads += 1
 
     return min(tails, heads)
 
-coins = ["герб", "герб", "решка", "решка", "герб"]
-print(min_flips(coins))
+coins_input = input("Введите монетки (герб/решка), разделяя их пробелами: ").split()
+print(f"Минимальное количество монеток, которые нужно перевернуть: {min_flips(coins_input)}")
