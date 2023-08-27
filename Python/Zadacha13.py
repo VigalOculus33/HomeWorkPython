@@ -3,16 +3,14 @@
 # Для этого Петя делает две подсказки. Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
 
 def find_numbers(S, P):
-    # Перебор всех возможных значений для X и Y
     for X in range(1, 1001):
-        for Y in range(1, 1001):
+        for Y in range(X, 1001):
             if X + Y == S and X * Y == P:
                 return X, Y
     return None, None
 
-# Пример использования:
-S = 5
-P = 6
+S = int(input("Введите сумму чисел S: "))
+P = int(input("Введите произведение чисел P: "))
 X, Y = find_numbers(S, P)
 if X and Y:
     print(f"Числа X и Y: {X}, {Y}")
